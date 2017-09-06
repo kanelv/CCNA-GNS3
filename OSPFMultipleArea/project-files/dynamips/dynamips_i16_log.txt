@@ -1,0 +1,37 @@
+Aug 23 09:40:24.963 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 23 09:40:24.963 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49330.
+Aug 23 09:40:25.337 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 23 09:40:25.353 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 23 09:40:25.353 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Aug 23 09:40:26.164 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Aug 23 09:40:26.164 HYPERVISOR: exec_cmd: vm create Hanoi 3 c3600 
+Aug 23 09:40:26.180 VM: VM Hanoi created.
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_con_tcp_port Hanoi 2002 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: c3600 get_mac_addr Hanoi 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_ios Hanoi C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm get_status Hanoi 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm slot_add_binding Hanoi 1 0 NM-1FE-TX 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_exec_area Hanoi 64 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm get_status Hanoi 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm slot_add_binding Hanoi 0 0 NM-4T 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm get_status Hanoi 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_idle_pc Hanoi 0x60ab164c 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_nvram Hanoi 256 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_ram Hanoi 192 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: c3600 set_mac_addr Hanoi cc03.092c.0000 
+Aug 23 09:40:26.180 HYPERVISOR: exec_cmd: vm set_config Hanoi configs/i3_startup-config.cfg 
+Aug 23 09:40:27.007 HYPERVISOR: exec_cmd: vm set_ghost_status Hanoi 2 
+Aug 23 09:40:27.022 HYPERVISOR: exec_cmd: vm set_ghost_file Hanoi c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 23 09:40:27.241 HYPERVISOR: exec_cmd: nio create_udp udp-b7d93e44-0ed4-47ef-a8bb-c369bf273c5b 10005 127.0.0.1 10004 
+Aug 23 09:40:27.256 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Hanoi 0 0 udp-b7d93e44-0ed4-47ef-a8bb-c369bf273c5b 
+Aug 23 09:40:27.256 HYPERVISOR: exec_cmd: vm get_status Hanoi 
+Aug 23 09:40:27.334 HYPERVISOR: exec_cmd: nio create_udp udp-3a62c2af-d20d-4f54-b639-499d32e3b519 10007 127.0.0.1 10006 
+Aug 23 09:40:27.350 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Hanoi 1 0 udp-3a62c2af-d20d-4f54-b639-499d32e3b519 
+Aug 23 09:40:27.365 HYPERVISOR: exec_cmd: vm get_status Hanoi 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm get_status Hanoi 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm extract_config Hanoi 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm delete Hanoi 
+Aug 23 09:50:25.348 VM: VM Hanoi destroyed.
+Aug 23 09:50:25.348 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 23 09:50:25.395 HYPERVISOR: Stopped.
+Aug 23 09:50:25.395 GENERAL: reset done.

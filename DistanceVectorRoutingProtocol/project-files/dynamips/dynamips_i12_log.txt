@@ -1,0 +1,58 @@
+Aug 31 10:21:50.214 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 31 10:21:50.214 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49270.
+Aug 31 10:21:50.526 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 31 10:21:50.526 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 31 10:21:50.526 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/DistanceVectorRoutingProtocol\project-files\dynamips 
+Aug 31 10:21:51.134 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/DistanceVectorRoutingProtocol\project-files\dynamips
+Aug 31 10:21:51.134 HYPERVISOR: exec_cmd: vm create R4 4 c3600 
+Aug 31 10:21:51.134 VM: VM R4 created.
+Aug 31 10:21:51.134 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2004 
+Aug 31 10:21:51.134 HYPERVISOR: exec_cmd: c3600 get_mac_addr R4 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: c3600 set_mac_addr R4 cc04.15cc.0000 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x6069a9e8 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 NM-4T 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Aug 31 10:21:51.150 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Aug 31 10:21:52.148 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Aug 31 10:21:52.164 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 31 10:21:52.585 HYPERVISOR: exec_cmd: nio create_udp udp-706b09df-83ab-4bc4-ae21-3abefa552f6e 10003 127.0.0.1 10002 
+Aug 31 10:21:52.694 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-706b09df-83ab-4bc4-ae21-3abefa552f6e 
+Aug 31 10:21:52.710 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:21:52.990 HYPERVISOR: exec_cmd: nio create_udp udp-fccc30c3-bd96-426f-81a1-d72c147a86ad 10004 127.0.0.1 10005 
+Aug 31 10:21:53.006 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-fccc30c3-bd96-426f-81a1-d72c147a86ad 
+Aug 31 10:21:53.006 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:21:53.193 HYPERVISOR: exec_cmd: nio create_udp udp-563f9aad-8f27-4e44-8744-2e185188ced8 10009 127.0.0.1 10008 
+Aug 31 10:21:53.334 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 2 udp-563f9aad-8f27-4e44-8744-2e185188ced8 
+Aug 31 10:21:53.334 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:37:29.350 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:37:29.350 HYPERVISOR: exec_cmd: vm start R4 
+Aug 31 10:41:15.724 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:41:15.724 HYPERVISOR: exec_cmd: vm stop R4 
+Aug 31 10:41:16.052 VM: VM R4 shutdown.
+Aug 31 10:43:03.109 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:43:03.109 HYPERVISOR: exec_cmd: vm start R4 
+Aug 31 10:46:59.336 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:46:59.336 HYPERVISOR: exec_cmd: vm set_idle_pc_online R4 0 0x0 
+Aug 31 10:46:59.336 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:46:59.336 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:46:59.336 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R4 0 
+Aug 31 10:47:14.999 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:47:14.999 HYPERVISOR: exec_cmd: vm set_idle_pc_online R4 0 0x604ca690 
+Aug 31 10:47:14.999 HYPERVISOR: exec_cmd: vm cpu_usage R4 0 
+Aug 31 10:47:18.009 HYPERVISOR: exec_cmd: vm cpu_usage R4 0 
+Aug 31 10:57:20.628 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:57:20.628 HYPERVISOR: exec_cmd: vm set_idle_pc_online R4 0 0x0 
+Aug 31 10:57:20.628 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:57:20.628 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:57:20.628 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R4 0 
+Aug 31 10:57:36.500 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 31 10:57:36.500 HYPERVISOR: exec_cmd: vm set_idle_pc_online R4 0 0x604ca690 
+Aug 31 10:57:36.500 HYPERVISOR: exec_cmd: vm cpu_usage R4 0 
+Aug 31 10:57:39.527 HYPERVISOR: exec_cmd: vm cpu_usage R4 0 

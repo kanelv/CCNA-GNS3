@@ -1,0 +1,37 @@
+Aug 23 09:40:25.010 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 23 09:40:25.010 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49329.
+Aug 23 09:40:25.337 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 23 09:40:25.353 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 23 09:40:25.353 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Aug 23 09:40:26.055 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: vm create Haiphong 2 c3600 
+Aug 23 09:40:26.055 VM: VM Haiphong created.
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: vm set_con_tcp_port Haiphong 2001 
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: c3600 get_mac_addr Haiphong 
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: vm set_ios Haiphong C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: vm slot_add_binding Haiphong 1 0 NM-1FE-TX 
+Aug 23 09:40:26.055 HYPERVISOR: exec_cmd: vm set_exec_area Haiphong 64 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm slot_add_binding Haiphong 0 0 NM-4T 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm set_idle_pc Haiphong 0x60ab1758 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm set_nvram Haiphong 256 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm set_ram Haiphong 192 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: c3600 set_mac_addr Haiphong cc02.15fc.0000 
+Aug 23 09:40:26.071 HYPERVISOR: exec_cmd: vm set_config Haiphong configs/i2_startup-config.cfg 
+Aug 23 09:40:26.476 HYPERVISOR: exec_cmd: vm set_ghost_status Haiphong 2 
+Aug 23 09:40:26.476 HYPERVISOR: exec_cmd: vm set_ghost_file Haiphong c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 23 09:40:27.225 HYPERVISOR: exec_cmd: nio create_udp udp-a74632ce-1832-4df6-8c51-36a2ce3f4fa5 10004 127.0.0.1 10005 
+Aug 23 09:40:27.256 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Haiphong 0 0 udp-a74632ce-1832-4df6-8c51-36a2ce3f4fa5 
+Aug 23 09:40:27.256 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Aug 23 09:40:27.553 HYPERVISOR: exec_cmd: nio create_udp udp-a82412e8-739d-4853-a0a9-5f91388c81b6 10013 127.0.0.1 10012 
+Aug 23 09:40:27.553 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Haiphong 1 0 udp-a82412e8-739d-4853-a0a9-5f91388c81b6 
+Aug 23 09:40:27.553 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Aug 23 09:50:25.317 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Aug 23 09:50:25.317 HYPERVISOR: exec_cmd: vm extract_config Haiphong 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm delete Haiphong 
+Aug 23 09:50:25.333 VM: VM Haiphong destroyed.
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 23 09:50:25.395 HYPERVISOR: Stopped.
+Aug 23 09:50:25.395 GENERAL: reset done.

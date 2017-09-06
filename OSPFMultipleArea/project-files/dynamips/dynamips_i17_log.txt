@@ -1,0 +1,37 @@
+Aug 23 09:40:24.901 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 23 09:40:24.901 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49331.
+Aug 23 09:40:25.337 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 23 09:40:25.337 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 23 09:40:25.337 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Aug 23 09:40:26.117 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Aug 23 09:40:26.117 HYPERVISOR: exec_cmd: vm create Danang 4 c3600 
+Aug 23 09:40:26.117 VM: VM Danang created.
+Aug 23 09:40:26.117 HYPERVISOR: exec_cmd: vm set_con_tcp_port Danang 2003 
+Aug 23 09:40:26.117 HYPERVISOR: exec_cmd: c3600 get_mac_addr Danang 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm set_ios Danang C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm get_status Danang 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm slot_add_binding Danang 1 0 NM-1FE-TX 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm set_exec_area Danang 64 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm get_status Danang 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm slot_add_binding Danang 0 0 NM-4T 
+Aug 23 09:40:26.133 HYPERVISOR: exec_cmd: vm get_status Danang 
+Aug 23 09:40:26.149 HYPERVISOR: exec_cmd: vm set_idle_pc Danang 0x60ab164c 
+Aug 23 09:40:26.149 HYPERVISOR: exec_cmd: vm set_nvram Danang 256 
+Aug 23 09:40:26.149 HYPERVISOR: exec_cmd: vm set_ram Danang 192 
+Aug 23 09:40:26.149 HYPERVISOR: exec_cmd: c3600 set_mac_addr Danang cc04.13f8.0000 
+Aug 23 09:40:26.149 HYPERVISOR: exec_cmd: vm set_config Danang configs/i4_startup-config.cfg 
+Aug 23 09:40:26.897 HYPERVISOR: exec_cmd: vm set_ghost_status Danang 2 
+Aug 23 09:40:26.897 HYPERVISOR: exec_cmd: vm set_ghost_file Danang c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 23 09:40:27.178 HYPERVISOR: exec_cmd: nio create_udp udp-5699ec42-5345-4834-9b06-6beb50b571ea 10002 127.0.0.1 10003 
+Aug 23 09:40:27.241 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Danang 0 0 udp-5699ec42-5345-4834-9b06-6beb50b571ea 
+Aug 23 09:40:27.256 HYPERVISOR: exec_cmd: vm get_status Danang 
+Aug 23 09:40:27.350 HYPERVISOR: exec_cmd: nio create_udp udp-66a02009-e0fe-421d-92c8-ddc15803b86b 10009 127.0.0.1 10008 
+Aug 23 09:40:27.365 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Danang 1 0 udp-66a02009-e0fe-421d-92c8-ddc15803b86b 
+Aug 23 09:40:27.381 HYPERVISOR: exec_cmd: vm get_status Danang 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm get_status Danang 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm extract_config Danang 
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: vm delete Danang 
+Aug 23 09:50:25.333 VM: VM Danang destroyed.
+Aug 23 09:50:25.348 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 23 09:50:25.395 HYPERVISOR: Stopped.
+Aug 23 09:50:25.395 GENERAL: reset done.

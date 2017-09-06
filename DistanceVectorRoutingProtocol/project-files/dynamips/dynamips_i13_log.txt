@@ -1,0 +1,39 @@
+Aug 31 10:21:50.292 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 31 10:21:50.292 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49271.
+Aug 31 10:21:50.619 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 31 10:21:50.619 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 31 10:21:50.619 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/DistanceVectorRoutingProtocol\project-files\dynamips 
+Aug 31 10:21:51.072 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/DistanceVectorRoutingProtocol\project-files\dynamips
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm create R5 5 c3600 
+Aug 31 10:21:51.087 VM: VM R5 created.
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2005 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: c3600 get_mac_addr R5 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: c3600 set_mac_addr R5 cc05.0d10.0000 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x6069a9e8 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:21:51.087 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 NM-4T 
+Aug 31 10:21:51.103 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Aug 31 10:21:51.103 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Aug 31 10:21:51.103 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Aug 31 10:21:51.103 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Aug 31 10:21:52.023 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Aug 31 10:21:52.023 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 31 10:21:52.538 HYPERVISOR: exec_cmd: nio create_udp udp-095e0bb7-6450-4a9c-880f-105aa3edcf24 10002 127.0.0.1 10003 
+Aug 31 10:21:52.694 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-095e0bb7-6450-4a9c-880f-105aa3edcf24 
+Aug 31 10:21:52.710 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:40:55.684 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:40:55.684 HYPERVISOR: exec_cmd: vm start R5 
+Aug 31 10:41:18.220 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:57:48.980 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:57:48.980 HYPERVISOR: exec_cmd: vm set_idle_pc_online R5 0 0x0 
+Aug 31 10:57:48.980 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:57:48.980 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:57:48.996 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R5 0 
+Aug 31 10:58:04.604 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 31 10:58:04.604 HYPERVISOR: exec_cmd: vm set_idle_pc_online R5 0 0x604ca690 
+Aug 31 10:58:04.604 HYPERVISOR: exec_cmd: vm cpu_usage R5 0 
+Aug 31 10:58:07.612 HYPERVISOR: exec_cmd: vm cpu_usage R5 0 

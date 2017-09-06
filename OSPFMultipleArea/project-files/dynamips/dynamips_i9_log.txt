@@ -1,0 +1,37 @@
+Sep 01 00:04:42.131 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 01 00:04:42.132 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50960.
+Sep 01 00:04:42.306 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 00:04:42.307 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 01 00:04:42.307 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Sep 01 00:04:42.891 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Sep 01 00:04:42.892 HYPERVISOR: exec_cmd: vm create Saigon 5 c3600 
+Sep 01 00:04:42.893 VM: VM Saigon created.
+Sep 01 00:04:42.894 HYPERVISOR: exec_cmd: vm set_con_tcp_port Saigon 2004 
+Sep 01 00:04:42.896 HYPERVISOR: exec_cmd: c3600 get_mac_addr Saigon 
+Sep 01 00:04:42.897 HYPERVISOR: exec_cmd: vm get_status Saigon 
+Sep 01 00:04:42.898 HYPERVISOR: exec_cmd: vm set_idle_pc Saigon 0x605ef574 
+Sep 01 00:04:42.900 HYPERVISOR: exec_cmd: vm set_ram Saigon 192 
+Sep 01 00:04:42.902 HYPERVISOR: exec_cmd: vm get_status Saigon 
+Sep 01 00:04:42.903 HYPERVISOR: exec_cmd: vm slot_add_binding Saigon 0 0 NM-4T 
+Sep 01 00:04:42.904 HYPERVISOR: exec_cmd: vm set_nvram Saigon 256 
+Sep 01 00:04:42.906 HYPERVISOR: exec_cmd: vm set_exec_area Saigon 64 
+Sep 01 00:04:42.909 HYPERVISOR: exec_cmd: vm get_status Saigon 
+Sep 01 00:04:42.911 HYPERVISOR: exec_cmd: vm slot_add_binding Saigon 1 0 NM-1FE-TX 
+Sep 01 00:04:42.914 HYPERVISOR: exec_cmd: c3600 set_mac_addr Saigon cc05.1bf8.0000 
+Sep 01 00:04:42.916 HYPERVISOR: exec_cmd: vm set_ios Saigon C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Sep 01 00:04:42.917 HYPERVISOR: exec_cmd: vm set_config Saigon configs/i5_startup-config.cfg 
+Sep 01 00:04:43.505 HYPERVISOR: exec_cmd: vm set_ghost_status Saigon 2 
+Sep 01 00:04:43.509 HYPERVISOR: exec_cmd: vm set_ghost_file Saigon c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Sep 01 00:04:43.705 HYPERVISOR: exec_cmd: nio create_udp udp-40dec24f-2641-48df-abfb-b5c424732fa7 10002 127.0.0.1 10003 
+Sep 01 00:04:43.760 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Saigon 0 0 udp-40dec24f-2641-48df-abfb-b5c424732fa7 
+Sep 01 00:04:43.762 HYPERVISOR: exec_cmd: vm get_status Saigon 
+Sep 01 00:04:43.836 HYPERVISOR: exec_cmd: nio create_udp udp-9413c2be-66b6-4769-aff3-6c87f651d975 10007 127.0.0.1 10006 
+Sep 01 00:04:43.893 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Saigon 1 0 udp-9413c2be-66b6-4769-aff3-6c87f651d975 
+Sep 01 00:04:43.896 HYPERVISOR: exec_cmd: vm get_status Saigon 
+Sep 01 00:07:30.549 HYPERVISOR: exec_cmd: vm get_status Saigon 
+Sep 01 00:07:30.555 HYPERVISOR: exec_cmd: vm extract_config Saigon 
+Sep 01 00:07:30.556 HYPERVISOR: exec_cmd: vm delete Saigon 
+Sep 01 00:07:30.556 VM: VM Saigon destroyed.
+Sep 01 00:07:30.558 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 01 00:07:30.926 HYPERVISOR: Stopped.
+Sep 01 00:07:30.926 GENERAL: reset done.

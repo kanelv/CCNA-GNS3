@@ -1,0 +1,34 @@
+Sep 01 00:04:42.108 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 01 00:04:42.108 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50962.
+Sep 01 00:04:42.224 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 00:04:42.224 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 01 00:04:42.225 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Sep 01 00:04:42.882 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Sep 01 00:04:42.886 HYPERVISOR: exec_cmd: vm create Cantho 7 c3600 
+Sep 01 00:04:42.887 VM: VM Cantho created.
+Sep 01 00:04:42.888 HYPERVISOR: exec_cmd: vm set_con_tcp_port Cantho 2006 
+Sep 01 00:04:42.890 HYPERVISOR: exec_cmd: c3600 get_mac_addr Cantho 
+Sep 01 00:04:42.891 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Sep 01 00:04:42.893 HYPERVISOR: exec_cmd: vm set_idle_pc Cantho 0x60693818 
+Sep 01 00:04:42.895 HYPERVISOR: exec_cmd: vm set_ram Cantho 192 
+Sep 01 00:04:42.896 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Sep 01 00:04:42.897 HYPERVISOR: exec_cmd: vm slot_add_binding Cantho 0 0 NM-4T 
+Sep 01 00:04:42.898 HYPERVISOR: exec_cmd: vm set_nvram Cantho 256 
+Sep 01 00:04:42.901 HYPERVISOR: exec_cmd: vm set_exec_area Cantho 64 
+Sep 01 00:04:42.903 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Sep 01 00:04:42.904 HYPERVISOR: exec_cmd: vm slot_add_binding Cantho 1 0 NM-1FE-TX 
+Sep 01 00:04:42.905 HYPERVISOR: exec_cmd: c3600 set_mac_addr Cantho cc07.1d50.0000 
+Sep 01 00:04:42.908 HYPERVISOR: exec_cmd: vm set_ios Cantho C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Sep 01 00:04:42.911 HYPERVISOR: exec_cmd: vm set_config Cantho configs/i7_startup-config.cfg 
+Sep 01 00:04:43.473 HYPERVISOR: exec_cmd: vm set_ghost_status Cantho 2 
+Sep 01 00:04:43.474 HYPERVISOR: exec_cmd: vm set_ghost_file Cantho c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Sep 01 00:04:43.723 HYPERVISOR: exec_cmd: nio create_udp udp-9bca43b1-85bb-4c5e-9737-4c00306ff38c 10003 127.0.0.1 10002 
+Sep 01 00:04:43.761 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Cantho 0 0 udp-9bca43b1-85bb-4c5e-9737-4c00306ff38c 
+Sep 01 00:04:43.763 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Sep 01 00:07:30.548 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Sep 01 00:07:30.550 HYPERVISOR: exec_cmd: vm extract_config Cantho 
+Sep 01 00:07:30.552 HYPERVISOR: exec_cmd: vm delete Cantho 
+Sep 01 00:07:30.552 VM: VM Cantho destroyed.
+Sep 01 00:07:30.553 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 01 00:07:30.814 HYPERVISOR: Stopped.
+Sep 01 00:07:30.814 GENERAL: reset done.

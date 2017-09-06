@@ -1,0 +1,44 @@
+Aug 31 09:14:55.957 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 31 09:14:55.957 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49200.
+Aug 31 09:14:56.581 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 31 09:14:56.581 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 31 09:14:56.581 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Aug 31 09:14:56.831 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Aug 31 09:14:56.831 HYPERVISOR: exec_cmd: vm create Hue 6 c3600 
+Aug 31 09:14:56.831 VM: VM Hue created.
+Aug 31 09:14:56.831 HYPERVISOR: exec_cmd: vm set_con_tcp_port Hue 2005 
+Aug 31 09:14:56.831 HYPERVISOR: exec_cmd: c3600 get_mac_addr Hue 
+Aug 31 09:14:56.846 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:14:56.846 HYPERVISOR: exec_cmd: vm slot_add_binding Hue 1 0 NM-1FE-TX 
+Aug 31 09:14:56.846 HYPERVISOR: exec_cmd: c3600 set_mac_addr Hue cc06.1c8c.0000 
+Aug 31 09:14:56.846 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:14:56.846 HYPERVISOR: exec_cmd: vm set_idle_pc Hue 0x605ef574 
+Aug 31 09:14:56.862 HYPERVISOR: exec_cmd: vm set_ios Hue C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 31 09:14:56.862 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:14:56.862 HYPERVISOR: exec_cmd: vm slot_add_binding Hue 0 0 NM-4T 
+Aug 31 09:14:56.862 HYPERVISOR: exec_cmd: vm set_nvram Hue 256 
+Aug 31 09:14:56.862 HYPERVISOR: exec_cmd: vm set_exec_area Hue 64 
+Aug 31 09:14:56.862 HYPERVISOR: exec_cmd: vm set_ram Hue 192 
+Aug 31 09:14:56.878 HYPERVISOR: exec_cmd: vm set_config Hue configs/i6_startup-config.cfg 
+Aug 31 09:14:58.391 HYPERVISOR: exec_cmd: vm set_ghost_status Hue 2 
+Aug 31 09:14:58.391 HYPERVISOR: exec_cmd: vm set_ghost_file Hue c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 31 09:14:59.124 HYPERVISOR: exec_cmd: nio create_udp udp-d7ded53a-b02d-43c4-99ed-bd57addb305c 10001 127.0.0.1 10000 
+Aug 31 09:14:59.140 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Hue 0 0 udp-d7ded53a-b02d-43c4-99ed-bd57addb305c 
+Aug 31 09:14:59.171 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:15:14.699 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:15:14.699 HYPERVISOR: exec_cmd: vm start Hue 
+Aug 31 09:33:29.419 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:33:29.435 HYPERVISOR: exec_cmd: vm stop Hue 
+Aug 31 09:33:29.685 VM: VM Hue shutdown.
+Aug 31 09:33:31.073 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 09:33:31.089 HYPERVISOR: exec_cmd: vm start Hue 
+Aug 31 10:21:29.173 HYPERVISOR: exec_cmd: vm extract_config Hue 
+Aug 31 10:21:43.199 HYPERVISOR: exec_cmd: vm get_status Hue 
+Aug 31 10:21:43.199 HYPERVISOR: exec_cmd: vm stop Hue 
+Aug 31 10:21:43.495 VM: VM Hue shutdown.
+Aug 31 10:21:43.495 HYPERVISOR: exec_cmd: vm extract_config Hue 
+Aug 31 10:21:43.495 HYPERVISOR: exec_cmd: vm delete Hue 
+Aug 31 10:21:43.495 VM: VM Hue destroyed.
+Aug 31 10:21:43.511 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 31 10:21:43.714 HYPERVISOR: Stopped.
+Aug 31 10:21:43.714 GENERAL: reset done.

@@ -1,0 +1,54 @@
+Sep 01 00:04:42.128 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 01 00:04:42.129 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50957.
+Sep 01 00:04:42.305 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 00:04:42.305 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 01 00:04:42.305 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Sep 01 00:04:42.741 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Sep 01 00:04:42.741 HYPERVISOR: exec_cmd: vm create Haiphong 2 c3600 
+Sep 01 00:04:42.743 VM: VM Haiphong created.
+Sep 01 00:04:42.766 HYPERVISOR: exec_cmd: vm set_con_tcp_port Haiphong 2001 
+Sep 01 00:04:42.766 HYPERVISOR: exec_cmd: c3600 get_mac_addr Haiphong 
+Sep 01 00:04:42.767 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:04:42.767 HYPERVISOR: exec_cmd: vm set_idle_pc Haiphong 0x60ab1758 
+Sep 01 00:04:42.768 HYPERVISOR: exec_cmd: vm set_ram Haiphong 192 
+Sep 01 00:04:42.768 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:04:42.768 HYPERVISOR: exec_cmd: vm slot_add_binding Haiphong 0 0 NM-4T 
+Sep 01 00:04:42.769 HYPERVISOR: exec_cmd: vm set_nvram Haiphong 256 
+Sep 01 00:04:42.769 HYPERVISOR: exec_cmd: vm set_exec_area Haiphong 64 
+Sep 01 00:04:42.770 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:04:42.770 HYPERVISOR: exec_cmd: vm slot_add_binding Haiphong 1 0 NM-1FE-TX 
+Sep 01 00:04:42.770 HYPERVISOR: exec_cmd: c3600 set_mac_addr Haiphong cc02.15fc.0000 
+Sep 01 00:04:42.771 HYPERVISOR: exec_cmd: vm set_ios Haiphong C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Sep 01 00:04:42.772 HYPERVISOR: exec_cmd: vm set_config Haiphong configs/i2_startup-config.cfg 
+Sep 01 00:04:42.772 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Sep 01 00:04:42.774 VM: VM Ghost created.
+Sep 01 00:04:42.775 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Sep 01 00:04:42.775 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 01 00:04:42.775 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Sep 01 00:04:42.776 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Sep 01 00:04:42.776 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 01 00:04:42.777 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 01 00:04:43.156 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 01 00:04:43.157 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 01 00:04:43.304 VM: VM Ghost shutdown.
+Sep 01 00:04:43.305 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 01 00:04:43.305 VM: VM Ghost destroyed.
+Sep 01 00:04:43.309 HYPERVISOR: exec_cmd: vm set_ghost_status Haiphong 2 
+Sep 01 00:04:43.310 HYPERVISOR: exec_cmd: vm set_ghost_file Haiphong c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Sep 01 00:04:43.854 HYPERVISOR: exec_cmd: nio create_udp udp-dfb9f8b5-0c7a-412e-a1a3-ff1fd5d5119d 10008 127.0.0.1 10009 
+Sep 01 00:04:43.894 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Haiphong 0 0 udp-dfb9f8b5-0c7a-412e-a1a3-ff1fd5d5119d 
+Sep 01 00:04:43.897 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:04:44.212 HYPERVISOR: exec_cmd: nio create_udp udp-efb65dfe-18f1-445d-a7b4-ba39262bbead 10012 127.0.0.1 10013 
+Sep 01 00:04:44.231 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Haiphong 1 0 udp-efb65dfe-18f1-445d-a7b4-ba39262bbead 
+Sep 01 00:04:44.232 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:07:00.924 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:07:00.925 HYPERVISOR: exec_cmd: vm start Haiphong 
+Sep 01 00:07:30.549 HYPERVISOR: exec_cmd: vm get_status Haiphong 
+Sep 01 00:07:30.554 HYPERVISOR: exec_cmd: vm stop Haiphong 
+Sep 01 00:07:31.321 VM: VM Haiphong shutdown.
+Sep 01 00:07:31.346 HYPERVISOR: exec_cmd: vm extract_config Haiphong 
+Sep 01 00:07:31.348 HYPERVISOR: exec_cmd: vm delete Haiphong 
+Sep 01 00:07:31.460 VM: VM Haiphong destroyed.
+Sep 01 00:07:31.461 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 01 00:07:31.892 HYPERVISOR: Stopped.
+Sep 01 00:07:31.892 GENERAL: reset done.

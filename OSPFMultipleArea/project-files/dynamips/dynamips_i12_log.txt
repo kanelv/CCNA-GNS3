@@ -1,0 +1,20 @@
+Sep 01 00:04:43.378 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 01 00:04:43.379 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50969.
+Sep 01 00:04:43.476 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 00:04:43.507 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 01 00:04:43.513 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Sep 01 00:04:43.513 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Sep 01 00:04:43.541 HYPERVISOR: exec_cmd: ethsw create SW1 
+Sep 01 00:04:43.743 HYPERVISOR: exec_cmd: nio create_udp udp-c5bdea48-b3b6-43f2-8424-8ad208fcc936 10004 127.0.0.1 10005 
+Sep 01 00:04:43.762 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-c5bdea48-b3b6-43f2-8424-8ad208fcc936 
+Sep 01 00:04:43.819 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-c5bdea48-b3b6-43f2-8424-8ad208fcc936 1 
+Sep 01 00:04:43.874 HYPERVISOR: exec_cmd: nio create_udp udp-c6293f64-3710-4a49-8e3e-29bb3e58477a 10006 127.0.0.1 10007 
+Sep 01 00:04:43.895 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-c6293f64-3710-4a49-8e3e-29bb3e58477a 
+Sep 01 00:04:43.953 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-c6293f64-3710-4a49-8e3e-29bb3e58477a 1 
+Sep 01 00:04:44.017 HYPERVISOR: exec_cmd: nio create_udp udp-6b31838b-23b9-493c-8d91-88308b950542 10010 127.0.0.1 10011 
+Sep 01 00:04:44.019 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-6b31838b-23b9-493c-8d91-88308b950542 
+Sep 01 00:04:44.141 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-6b31838b-23b9-493c-8d91-88308b950542 1 
+Sep 01 00:07:30.021 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Sep 01 00:07:30.080 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 01 00:07:30.544 HYPERVISOR: Stopped.
+Sep 01 00:07:30.544 GENERAL: reset done.

@@ -1,0 +1,47 @@
+Aug 23 09:40:24.963 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Aug 23 09:40:24.963 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49333.
+Aug 23 09:40:25.337 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 23 09:40:25.353 HYPERVISOR: exec_cmd: hypervisor uuid 
+Aug 23 09:40:25.353 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips 
+Aug 23 09:40:25.930 GENERAL: working_dir=C:/Users/Administrator/GNS3/projects/OSPFMultipleArea\project-files\dynamips
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: vm create Cantho 7 c3600 
+Aug 23 09:40:25.930 VM: VM Cantho created.
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: vm set_con_tcp_port Cantho 2006 
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: c3600 get_mac_addr Cantho 
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: vm set_ios Cantho C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: vm slot_add_binding Cantho 1 0 NM-1FE-TX 
+Aug 23 09:40:25.930 HYPERVISOR: exec_cmd: vm set_exec_area Cantho 64 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm slot_add_binding Cantho 0 0 NM-4T 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm set_idle_pc Cantho 0x60693818 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm set_nvram Cantho 256 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm set_ram Cantho 192 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: c3600 set_mac_addr Cantho cc07.1d50.0000 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm set_config Cantho configs/i7_startup-config.cfg 
+Aug 23 09:40:25.946 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Aug 23 09:40:25.961 VM: VM Ghost created.
+Aug 23 09:40:25.961 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Administrator/GNS3/images/IOS/c3640-ik9o3s-mz124-25c.BIN 
+Aug 23 09:40:25.961 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 23 09:40:25.961 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 23 09:40:25.961 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Aug 23 09:40:25.961 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 23 09:40:25.961 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 23 09:40:26.336 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 23 09:40:26.336 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 23 09:40:26.445 VM: VM Ghost shutdown.
+Aug 23 09:40:26.445 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 23 09:40:26.445 VM: VM Ghost destroyed.
+Aug 23 09:40:26.461 HYPERVISOR: exec_cmd: vm set_ghost_status Cantho 2 
+Aug 23 09:40:26.461 HYPERVISOR: exec_cmd: vm set_ghost_file Cantho c3640-ik9o3s-mz124-25c.BIN-192.ghost 
+Aug 23 09:40:27.116 HYPERVISOR: exec_cmd: nio create_udp udp-3fa97093-96e6-44b7-b200-4f3fd2d39835 10001 127.0.0.1 10000 
+Aug 23 09:40:27.131 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Cantho 0 0 udp-3fa97093-96e6-44b7-b200-4f3fd2d39835 
+Aug 23 09:40:27.147 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Aug 23 09:50:25.317 HYPERVISOR: exec_cmd: vm get_status Cantho 
+Aug 23 09:50:25.317 HYPERVISOR: exec_cmd: vm extract_config Cantho 
+Aug 23 09:50:25.317 HYPERVISOR: exec_cmd: vm delete Cantho 
+Aug 23 09:50:25.317 VM: VM Cantho destroyed.
+Aug 23 09:50:25.333 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 23 09:50:25.395 HYPERVISOR: Stopped.
+Aug 23 09:50:25.395 GENERAL: reset done.
